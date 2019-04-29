@@ -1,3 +1,17 @@
+        public static int MinBribes(int[] queue) {
+            int count = 0;
+            for (int i = 0; i < queue.Length-1; i++) {
+                if (queue[i] - i - 1 > 2) {
+                    Console.WriteLine("Too chaotic");
+                    break;
+                }
+                int difference = queue[i] - queue[i + 1];
+                if (difference > 0) count += difference;
+
+            }
+            return count;
+        }
+
 public static int[] LeftRotation(int[] arr, int d) {
             //JS Splice method
             //var x = arr.splice(0, d);
