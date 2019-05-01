@@ -1,5 +1,3 @@
-
-
 public static int[] LeftRotation(int[] arr, int d) {
             //JS Splice method
             //var x = arr.splice(0, d);
